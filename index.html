@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommys Delight | Premium Luxury Catering</title>
+    <meta name="description" content="Luxury Catering Experiences Crafted to Impress. Premium wedding, corporate, and private event catering featuring exquisite Nigerian and International cuisine.">
+    <link rel="canonical" href="http://sommysdelight.com">
+    <meta property="og:url" content="http://sommysdelight.com">
+    
+    <!-- SEO & Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Sommys Delight",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80",
+      "@id": "",
+      "url": "https://www.sommysdelight.com",
+      "telephone": "+2348000000000",
+      "priceRange": "$$$",
+      "menu": "https://www.sommysdelight.com/menu",
+      "servesCuisine": ["Nigerian", "International"]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sd: {
+                            green: '#1B4D3E', /* Deep forest green */
+                            greenLight: '#2C735D',
+                            gold: '#D4AF37', /* Gold accents */
+                            ivory: '#FFFDF9', /* Ivory / Cream */
+                            charcoal: '#333333', /* Charcoal text */
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'luxury': '0 10px 40px -10px rgba(27, 77, 62, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities & Animations */
+        body { background-color: #FFFDF9; color: #333333; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .hover-scale { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-scale:hover { transform: scale(1.03); }
+        .hero-overlay { background: linear-gradient(to right, rgba(27, 77, 62, 0.85), rgba(27, 77, 62, 0.4)); }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #FFFDF9; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1B4D3E; }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-sd-gold selection:text-white">
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348000000000" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl group-hover:scale-110 transition-transform"></i>
+        <span class="absolute right-16 bg-white text-sd-charcoal text-sm font-medium px-4 py-2 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Chat with us!
+        </span>
+    </a>
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed w-full z-40 top-0 glass-nav border-b border-sd-gold/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-3xl font-bold text-sd-green tracking-tight">
+                        Sommys <span class="text-sd-gold italic font-light">Delight</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-sd-charcoal hover:text-sd-gold transition-colors font-medium text-sm tracking-wide uppercase">About</a>
+                    <a href="#services" class="text-sd-charcoal hover:text-sd-gold transition-colors font-medium text-sm tracking-wide uppercase">Services</a>
+                    <a href="#menu" class="text-sd-charcoal hover:text-sd-gold transition-colors font-medium text-sm tracking-wide uppercase">Menu</a>
+                    <a href="#gallery" class="text-sd-charcoal hover:text-sd-gold transition-colors font-medium text-sm tracking-wide uppercase">Gallery</a>
+                    <a href="#contact" class="bg-sd-green text-white px-8 py-3 rounded-sm hover:bg-sd-greenLight transition-colors font-medium tracking-wide shadow-md">Get a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-sd-green focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative h-screen flex items-center justify-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80" alt="Luxury Catering Spread" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <span class="block text-sd-gold font-sans tracking-[0.2em] uppercase text-sm mb-4 font-semibold">Premium Event Catering</span>
+            <h1 class="text-5xl md:text-7xl font-serif text-white font-bold leading-tight mb-6 drop-shadow-lg">
+                Luxury Catering Experiences <br/><span class="italic font-light">Crafted to Impress.</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-sd-ivory font-light max-w-2xl mx-auto mb-10 drop-shadow-md">
+                Elevate your weddings, corporate events, and private celebrations with exquisite culinary artistry, bespoke menus, and impeccable service.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto bg-sd-gold text-sd-charcoal px-10 py-4 rounded-sm font-semibold tracking-wide hover:bg-white transition-colors shadow-xl">
+                    Get a Free Quote
+                </a>
+                <a href="#menu" class="w-full sm:w-auto bg-transparent border border-white text-white px-10 py-4 rounded-sm font-medium tracking-wide hover:bg-white hover:text-sd-green transition-colors">
+                    View Our Menus
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST & CREDIBILITY SECTION -->
+    <section class="bg-sd-green text-sd-ivory py-12 border-b-4 border-sd-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-sd-greenLight">
+                <div>
+                    <div class="text-4xl font-serif font-bold text-sd-gold mb-2">10+</div>
+                    <div class="text-sm uppercase tracking-wider text-sd-ivory/80">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-serif font-bold text-sd-gold mb-2">500+</div>
+                    <div class="text-sm uppercase tracking-wider text-sd-ivory/80">Events Catered</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-serif font-bold text-sd-gold mb-2">4.9/5</div>
+                    <div class="text-sm uppercase tracking-wider text-sd-ivory/80">Client Rating</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-serif font-bold text-sd-gold mb-2"><i class="fas fa-award"></i></div>
+                    <div class="text-sm uppercase tracking-wider text-sd-ivory/80">Certified Food Safety</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 bg-sd-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm text-sd-gold font-bold tracking-widest uppercase mb-3">Our Expertise</h2>
+                <h3 class="text-4xl md:text-5xl font-serif text-sd-green font-bold">Bespoke Catering Services</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-luxury group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80" alt="Wedding Catering" class="w-full h-full object-cover hover-scale" />
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-serif font-bold text-sd-green mb-3">Wedding Catering</h4>
+                        <p class="text-gray-600 mb-6 font-light text-sm leading-relaxed">Unforgettable culinary experiences for your special day. From elegant plated dinners to grand luxury buffets.</p>
+                        <a href="#contact" class="text-sd-gold font-semibold text-sm hover:text-sd-green transition-colors uppercase tracking-wide flex items-center">
+                            Plan Your Wedding <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-luxury group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&q=80" alt="Corporate Events" class="w-full h-full object-cover hover-scale" />
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-serif font-bold text-sd-green mb-3">Corporate Events</h4>
+                        <p class="text-gray-600 mb-6 font-light text-sm leading-relaxed">Impress clients and reward teams with professional, punctual, and premium corporate food setups.</p>
+                        <a href="#contact" class="text-sd-gold font-semibold text-sm hover:text-sd-green transition-colors uppercase tracking-wide flex items-center">
+                            Book Corporate <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-luxury group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1563514995964-f9038237b605?auto=format&fit=crop&q=80" alt="Private Parties" class="w-full h-full object-cover hover-scale" />
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-serif font-bold text-sd-green mb-3">Private Events</h4>
+                        <p class="text-gray-600 mb-6 font-light text-sm leading-relaxed">Intimate dinners, birthdays, and anniversaries crafted with personalized menus and private chefs.</p>
+                        <a href="#contact" class="text-sd-gold font-semibold text-sm hover:text-sd-green transition-colors uppercase tracking-wide flex items-center">
+                            Inquire Now <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white rounded-sm overflow-hidden shadow-luxury group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&q=80" alt="Outdoor Catering" class="w-full h-full object-cover hover-scale" />
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-serif font-bold text-sd-green mb-3">Outdoor & Buffet</h4>
+                        <p class="text-gray-600 mb-6 font-light text-sm leading-relaxed">Grand outdoor setups with live cooking stations and beautifully styled luxury buffet displays.</p>
+                        <a href="#contact" class="text-sd-gold font-semibold text-sm hover:text-sd-green transition-colors uppercase tracking-wide flex items-center">
+                            Explore Options <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED MENU SECTION -->
+    <section id="menu" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-sm text-sd-gold font-bold tracking-widest uppercase mb-3">Culinary Art</h2>
+                    <h3 class="text-4xl md:text-5xl font-serif text-sd-green font-bold">Signature Selections</h3>
+                </div>
+                <a href="#" class="border-b-2 border-sd-gold text-sd-charcoal font-medium pb-1 hover:text-sd-green transition-colors">Download Full Menu (PDF)</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Dish 1 -->
+                <div class="flex gap-6 items-center group cursor-pointer">
+                    <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-sd-gold/20">
+                        <img src="https://images.unsplash.com/photo-1544025162-8111f4a9b5f3?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Jollof Rice" />
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline border-b border-gray-200 pb-2 mb-2">
+                            <h5 class="font-serif font-bold text-xl text-sd-green">Royal Jollof Fiesta</h5>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Smoky party jollof served with grilled peppered chicken, fried plantains, and coleslaw.</p>
+                    </div>
+                </div>
+                <!-- Dish 2 -->
+                <div class="flex gap-6 items-center group cursor-pointer">
+                    <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-sd-gold/20">
+                        <img src="https://images.unsplash.com/photo-1559058789-672da06263d8?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Canapes" />
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline border-b border-gray-200 pb-2 mb-2">
+                            <h5 class="font-serif font-bold text-xl text-sd-green">Smoked Salmon Canapés</h5>
+                            <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">GF</span>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Norwegian smoked salmon on dill blinis with herb cream cheese and caviar.</p>
+                    </div>
+                </div>
+                <!-- Dish 3 -->
+                <div class="flex gap-6 items-center group cursor-pointer">
+                    <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-sd-gold/20">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Steak" />
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline border-b border-gray-200 pb-2 mb-2">
+                            <h5 class="font-serif font-bold text-xl text-sd-green">Herb-Crusted Tenderloin</h5>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Premium beef tenderloin with truffle mashed potatoes and red wine reduction.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-sm text-gray-500 italic mb-6">We accommodate all dietary restrictions including Vegan, Vegetarian, Halal, and Gluten-Free.</p>
+                <a href="#contact" class="inline-block bg-white border border-sd-green text-sd-green px-8 py-3 hover:bg-sd-green hover:text-white transition-colors duration-300 font-medium tracking-wide">Customize Your Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="py-24 bg-sd-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-serif text-sd-green font-bold">The Sommys Experience</h3>
+                <p class="mt-4 text-gray-600">A seamless process from the first taste to the final toast.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <!-- Connector Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-[16.66%] right-[16.66%] h-[1px] bg-sd-gold/40 z-0"></div>
+                
+                <div class="text-center relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-sd-green text-sd-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-xl border-4 border-white">
+                        <i class="far fa-comments"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-sd-charcoal mb-3">1. Consultation</h4>
+                    <p class="text-gray-600 text-sm font-light">Share your vision, event details, and budget. We provide a comprehensive preliminary quote within 24 hours.</p>
+                </div>
+                
+                <div class="text-center relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-sd-green text-sd-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-xl border-4 border-white">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-sd-charcoal mb-3">2. Menu Tasting</h4>
+                    <p class="text-gray-600 text-sm font-light">Experience our culinary expertise firsthand. Customize dishes and finalize the perfect menu for your guests.</p>
+                </div>
+                
+                <div class="text-center relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-sd-green text-sd-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-xl border-4 border-white">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-sd-charcoal mb-3">3. Enjoy Your Event</h4>
+                    <p class="text-gray-600 text-sm font-light">Relax as our professional chefs and elegant waitstaff execute a flawless catering experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm text-sd-gold font-bold tracking-widest uppercase mb-3">Client Love</h2>
+                <h3 class="text-4xl md:text-5xl font-serif text-sd-green font-bold">Words from Our Clients</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-sd-ivory p-8 rounded-sm shadow-sm relative">
+                    <i class="fas fa-quote-left text-4xl text-sd-gold/20 absolute top-6 left-6"></i>
+                    <div class="flex text-sd-gold mb-4 relative z-10">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 relative z-10 font-light">"Sommys Delight catered our wedding of 300 guests and the food was phenomenal. The Jollof rice was a major hit, and the presentation of the appetizers felt like a Michelin star restaurant. Highly recommend!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80" alt="Sarah & John" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h6 class="font-bold text-sd-charcoal text-sm">Sarah & John T.</h6>
+                            <span class="text-xs text-gray-500">Wedding Reception</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-sd-ivory p-8 rounded-sm shadow-sm relative">
+                    <i class="fas fa-quote-left text-4xl text-sd-gold/20 absolute top-6 left-6"></i>
+                    <div class="flex text-sd-gold mb-4 relative z-10">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 relative z-10 font-light">"We use Sommys Delight for all our corporate end-of-year galas. Their professionalism is unmatched, the staff is incredibly polite, and the menu variety pleases even our most particular executives."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="Michael R." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h6 class="font-bold text-sd-charcoal text-sm">Michael R.</h6>
+                            <span class="text-xs text-gray-500">Corporate Gala</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONVERSION / CONTACT SECTION -->
+    <section id="contact" class="relative py-24 bg-sd-green">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80" alt="Texture" class="w-full h-full object-cover" />
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-sm shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <!-- Left Side: Info & Emotion -->
+                <div class="bg-sd-green text-white p-12 md:w-5/12 flex flex-col justify-center">
+                    <h3 class="text-4xl font-serif font-bold mb-4">Let's Craft Your <br/><span class="text-sd-gold italic">Perfect Menu</span></h3>
+                    <p class="text-sd-ivory/80 font-light mb-8">Weekend dates fill quickly. Secure your booking today for a flawless catering experience.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-sd-gold">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-sd-ivory/60 uppercase tracking-wider">Call Us</p>
+                                <a href="tel:+2349074678242" class="font-semibold text-lg hover:text-sd-gold transition-colors">+234 9074 678 242</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-sd-gold">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-sd-ivory/60 uppercase tracking-wider">WhatsApp</p>
+                                <a href="https://wa.me/2349074678242" class="font-semibold text-lg hover:text-sd-gold transition-colors">Message Us Directly</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-sd-gold">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-sd-ivory/60 uppercase tracking-wider">Email</p>
+                                <a href="mailto:blaisesantex001@gmail.com" class="font-semibold text-lg hover:text-sd-gold transition-colors">blaisesantex001@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Form -->
+                <div class="p-12 md:w-7/12 bg-sd-ivory">
+                    <h4 class="text-2xl font-serif text-sd-charcoal font-bold mb-6">Request a Quote</h4>
+                    <form class="space-y-6" action="mailto:blaisesantex001@gmail.com" method="GET" enctype="text/plain">
+                        <input type="hidden" name="subject" value="Sommys Delight Inquiry">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input name="Full Name" type="text" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-sd-green focus:ring focus:ring-sd-green/20 p-3 bg-white border" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone / WhatsApp</label>
+                                <input name="Phone / WhatsApp" type="tel" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-sd-green focus:ring focus:ring-sd-green/20 p-3 bg-white border" placeholder="+234...">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
+                                <select name="Event Type" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-sd-green focus:ring focus:ring-sd-green/20 p-3 bg-white border">
+                                    <option>Wedding Reception</option>
+                                    <option>Corporate Event</option>
+                                    <option>Birthday / Private Party</option>
+                                    <option>Outdoor Buffet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Estimated Guests</label>
+                                <input name="Estimated Guests" type="number" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-sd-green focus:ring focus:ring-sd-green/20 p-3 bg-white border" placeholder="e.g. 150">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Event Date</label>
+                            <input name="Event Date" type="date" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-sd-green focus:ring focus:ring-sd-green/20 p-3 bg-white border">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Tell us about your event</label>
+                            <textarea name="Message" rows="3" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-sd-green focus:ring focus:ring-sd-green/20 p-3 bg-white border" placeholder="Any specific cuisine preferences or dietary requirements?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sd-charcoal text-white font-medium py-4 rounded-sm hover:bg-sd-green transition-colors duration-300 shadow-md">
+                            Submit Request
+                        </button>
+                    </form>
+                    <p class="text-xs text-gray-500 mt-3">Messages will open your email client and send to <strong>blaisesantex001@gmail.com</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-sd-charcoal text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <div class="col-span-1 md:col-span-1">
+                    <a href="#" class="font-serif text-3xl font-bold text-white tracking-tight mb-4 block">
+                        Sommys <span class="text-sd-gold italic font-light">Delight</span>
+                    </a>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Premium luxury catering services crafting unforgettable culinary experiences for high-end weddings and corporate events.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-sd-gold transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-sd-gold transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-sd-gold transition-colors"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-sd-gold font-bold mb-4 uppercase tracking-wider text-sm">Quick Links</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#menu" class="hover:text-white transition-colors">View Menu</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition-colors">Event Gallery</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog & Tips</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-sd-gold font-bold mb-4 uppercase tracking-wider text-sm">Services</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Wedding Catering</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Corporate Events</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Private Chef Services</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Luxury Buffet Setups</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Event Staffing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-sd-gold font-bold mb-4 uppercase tracking-wider text-sm">Newsletter</h5>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to receive exclusive menu updates and event inspiration.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="w-full bg-white/10 border-none p-3 text-white focus:ring-1 focus:ring-sd-gold outline-none rounded-l-sm text-sm">
+                        <button class="bg-sd-gold text-sd-charcoal px-4 py-3 rounded-r-sm font-bold hover:bg-white transition-colors"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 Sommys Delight Catering. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
